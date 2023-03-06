@@ -1,3 +1,233 @@
+/*modifications ajoutées pour le SEO*/
+
+.texte_remplacant_image{
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-bottom: 5%;
+    font-size: 20px;
+}
+
+#citation{
+    padding-right: 10%;
+    padding-left: 10%;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    font-style: italic;
+}
+
+.col-sm-12 .texte_remplacant_image{
+    padding-left: 30%;
+    padding-right: 30%;
+}
+
+footer .col-sm-12, footer p{
+    font-size: 15px;
+    font-weight: bold;
+    color: white !important;
+}
+
+footer a{
+    color: white !important;
+    font-weight: bold;
+}
+
+footer .social{
+    padding-top: 1%;
+    font-weight: bold;
+    padding-bottom: 1%;
+}
+
+/*page contact*/
+.nav_page2{
+    position: absolute;
+    margin-left: 80%;
+    top: 10%;
+    padding-top: 1%;
+    list-style: none;
+}
+
+.sr-only{
+    display: none;
+}
+
+#bloc-6 h1, #bloc-6 p{
+    color: white !important;
+    position: relative;
+    z-index: 1;
+}
+
+#bloc-6 p{
+    font-size: 19px;
+    margin-left: 0;
+}
+
+#bloc-7{
+    padding: 0;
+}
+
+.bloc-lg{
+    margin: auto;
+}
+
+.form-group{
+    position: relative;
+    display: flex;
+    margin-bottom: 40px;
+}
+  
+.form-group label{
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: #aaa;
+    font-size: 20px;
+    transition: .2s ease-out;
+    animation-fill-mode: forwards;
+    z-index: 0;
+}
+  
+.form-group:focus-within label, 
+.form-group:valid label, 
+.form-group .active label{
+    top: 0px;
+    transform: translateY(-100%);
+    background-color: #F3976C;
+    color: white !important;
+    padding: 2px;
+    border-radius: 3px;
+}
+  
+.form-group input:not(:placeholder-shown) + label, 
+.form-group textarea:not(:placeholder-shown) + label{
+    top: 0px;
+    transform: translateY(-100%);
+    background-color: #F3976C;
+    color: white !important;
+    padding: 2px;
+    border-radius: 3px;
+}
+  
+.form-group input:not(:placeholder-shown), 
+.form-group textarea:not(:placeholder-shown){
+    border-color: #F3976C;
+}
+  
+.form-group input, 
+.form-group textarea{
+    display: block;
+    width: 100%;
+    padding: 10px 0px;
+    border: none;
+    outline: none;
+    background: none;
+    border-bottom: 2px solid #aaa;
+    font-size: 20px;
+    transition: .2s ease-out;
+    animation-fill-mode: forwards;
+    z-index: 1;
+}
+
+
+.col-sm-6 button{
+    display: flex;
+    margin: auto;
+    font-size: 30px;
+    border: none;
+    border-radius: 20px;
+    transition: all .2s;
+    cursor: pointer;
+}
+
+.col-sm-6 button:hover{
+    font-size: 50px;
+}
+
+#bloc-7 h2{
+    font-size: 150%;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+#bloc-7 .col-sm-6 p{
+    font-size: 100%;
+    line-height: 150%;
+}
+
+iframe{
+    float: right;
+    margin-top: -15%;
+    border-radius: 20px;
+    margin-bottom: 5%;
+    box-shadow: 1px 3px 10px 4px rgba(0, 0, 0, .3);
+}
+/*fin page contact*/ 
+
+@media screen and (max-width:768px) {
+    p{
+    font-size: 12px !important;
+    }
+
+    .texte_remplacant_image{
+        font-size: 20px !important;
+    }
+
+    .img_text{
+        width: 95%;
+    }  
+    
+    .img-responsive {
+        margin: auto;
+    }
+
+    .col-sm-12{
+        padding: 0;
+    }
+
+    #bloc-5-cta .mg-md{
+        margin: 0 5% 0 5%;
+    }
+
+    .row.row-no-gutters.social{
+        display: flex;
+        justify-content: space-around;
+        margin: 5% 10% 5% 10%;
+    }
+
+    .row{
+        margin: 0;
+    }
+
+    /*page contact*/
+    .navbar-brand{
+        display: flex;
+        justify-content: center;
+        margin-bottom: -20px;
+    } 
+
+    .nav_page2{
+        display: none;
+    }
+
+    .form-group{
+        margin-bottom: 55px;
+    }
+
+    .form-group label{
+        left: 0;
+    }
+
+    iframe{
+        float: none;
+        display:block;
+        margin: auto;
+        width: 90%;
+        height: 100%;
+    }
+}
+/*fin des modifications*/
+
+
 body {
     margin: 0;
     padding: 0;
@@ -507,7 +737,7 @@ button {
 
 .form-control {
     border-color: rgba(0, 0, 0, .1);
-    box-shadow: none;
+    /*box-shadow: none;*/
 }
 
 .scrollToTop {
@@ -818,11 +1048,11 @@ h4 {
 }
 
 .bg-banniere {
-    background-image: url("img/agence-la-panthere.jpg");
+    background-image: url("img/agence-la-panthere.avif");
 }
 
 .bg-presentation {
-    background-image: url("img/image-de-presentation.bmp");
+    background-image: url("img/image-de-presentation.avif");
 }
 
 @media (max-width: 1024px) {
@@ -848,13 +1078,13 @@ h4 {
     }
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
     .b-parallax {
         background-attachment: scroll;
     }
 }
 
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+@media only screen and (min-width: 1024px) and (max-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
     .b-parallax {
         background-attachment: scroll;
     }
@@ -872,10 +1102,10 @@ h4 {
         overflow-x: hidden;
         position: relative;
     }
-    .bloc {
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
-    }
+    /*.bloc {
+        /*padding-left: constant(safe-area-inset-left);
+        padding-right: constant(safe-area-inset-right);/
+    }*/
     .bloc-group,
     .bloc-group .bloc {
         display: block;
@@ -884,8 +1114,8 @@ h4 {
     .bloc-fill-screen .fill-bloc-top-edge,
     .bloc-fill-screen .fill-bloc-bottom-edge {
         padding: 0 20px;
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
+        /*padding-left: constant(safe-area-inset-left);
+        padding-right: constant(safe-area-inset-right);*/
     }
 }
 
